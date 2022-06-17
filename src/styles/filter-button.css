@@ -1,0 +1,29 @@
+.filter-btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    width: 100%;
+    gap: 2%;    
+  }
+
+  .btn-filter-todo {
+    background-color: var(--button-color);    
+    color: var(--text-primary); 
+    cursor: pointer;
+    width: 33%;
+    min-width: 100px;
+    min-height: 40px;     
+    border: 0;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  
+  .btn-filter-todo:hover {
+    opacity: 0.6;
+  }
+  
+  .btn-filter-todo[aria-pressed="true"] {
+    text-decoration: underline;
+    border: 2px solid var(--btn-border);
+  }

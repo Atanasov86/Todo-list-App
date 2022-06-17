@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+:root {
+  --background: #fcf8ec;
+  --wrapper-bg: #d0e8f2;
+  --button-color: #79a3b1;
+  --text-primary: #222222;
+  --text-secondary: #222222;
+  --border: #fcf8ec;
+  --btn-border: black;
+}
+
+[data-theme="dark"] {
+  --background: #1f1d36;
+  --wrapper-bg: #3f3351;
+  --button-color: #e9a6a6;
+  --text-primary: #f0f0f0;
+  --text-secondary: #222222;
+  --border: #1f1d36;
+  --border-radius-primary: 5px;
+  --btn-border: white;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.app {
+  background-color: var(--background);
+  color: var(--text-primary);
+  padding-top: 20px;
+  transition: ease-in-out 0.4s;
+}
+
+.Wrapper {
+  margin: auto;
+  width: 40%;
+  padding: 10px 50px 10px 50px;
+  border-radius: 15px;  
+  background-color: var(--wrapper-bg);
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.header {
+  display: grid;
+  margin: 5px;  
+  grid-template-columns: repeat(12, 1fr);
+  font-size: 2rem;  
+}
+
+.app-name {  
+  grid-column: 1/11;  
+}
+
+.theme-icon {
+  margin-left: 5px;
+  width: 40px;
+  height: 40px;  
+  padding: 0;
+  font-size: 20px;
+  grid-column: 12/12;
+  color: var(--text-primary);
+  cursor: pointer;
+  border: 0;
+  background-color: var(--background);
+  border-radius: 5px;
+}

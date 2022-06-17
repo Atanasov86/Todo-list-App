@@ -1,0 +1,96 @@
+.todo-wrapper {
+  display: flex;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: var(--background);
+  color: var(--text-primary);
+}
+
+.todo-input-container {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  color: var(--text-primary);
+}
+
+.todo-checkbox {
+  margin: 0;
+}
+
+.todo-btn-group { 
+  margin: auto;
+}
+
+.btn-save {
+  box-sizing: border-box;
+  border: 0;
+  background-color: #198754;
+  cursor: pointer;
+  color: var(--text-primary);  
+  width: 40%;  
+  margin-left: 5px;  
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 4px;
+}
+
+
+
+.btn-save:hover {
+  opacity: 0.6;
+  color: white;
+  border: 1px solid white;
+}
+
+.btn-delete {
+  box-sizing: border-box;  
+  cursor: pointer;
+  color: var(--text-primary);
+  background-color: transparent;
+  width: 40%;  
+  margin-left: 5px;  
+  font-size: 20px;
+  padding: 4px;
+  border: 0;
+  border-radius: 5px;  
+  
+}
+
+.btn-delete::after {  
+  content: "\00d7";
+}
+
+.btn-delete:hover {
+  opacity: 0.6;
+  color: white;
+  /* border: 1px solid white; */
+}
+
+.edit-todo-input {
+  background-color: transparent;
+  color: var(--text-primary);
+  resize: none;
+  overflow: hidden;
+  border: 0;  
+  width: 80%;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.due-date-input {
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 0;  
+  outline: none;  
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.edit-todo-input:focus {
+  outline: 0;
+}
+
+.todo-checkbox:checked {
+  accent-color: #198754;
+}
